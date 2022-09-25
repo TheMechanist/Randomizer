@@ -16,7 +16,7 @@ public class ApplicationClass extends Application {
 
         // OneSignal Initialization
         OneSignal.initWithContext(this);
-        OneSignal.setAppId("ONESIGNAL_APP_ID");
+        OneSignal.setAppId(ONESIGNAL_APP_ID);
 
         // promptForPushNotifications will show the native Android notification permission prompt.
         // We recommend removing the following code and instead using an In-App Message to prompt for notification permission (See step 7)
