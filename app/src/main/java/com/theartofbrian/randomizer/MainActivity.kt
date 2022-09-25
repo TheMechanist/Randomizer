@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.SeekBar
 import android.widget.TextView
+import com.onesignal.OneSignal
 import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         rollButton.setOnClickListener {
             val rand = Random.nextInt(seekBar.progress) + 1
             resultsTextView.text = rand.toString()
+            OneSignal.sendTag("level", "5")
         }
     }
 }
